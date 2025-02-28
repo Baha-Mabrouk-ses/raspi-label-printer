@@ -1,0 +1,13 @@
+# label_printer.service
+[Unit]
+Description=Label Printer Service
+After=network.target
+
+[Service]
+ExecStart=/home/pi/raspi-label-printer/venv/bin/python /home/pi/raspi-label-printer/app.py
+WorkingDirectory=/home/pi/raspi-label-printer
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

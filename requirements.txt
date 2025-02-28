@@ -1,0 +1,6 @@
+# requirements.txt
+opencv-python
+torch
+ultralytics
+pdf2image
+Pillow
